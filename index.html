@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bcc3e1c31f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+                <img src="Images/" class="logo"
+                alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Junior Web Developer</p>
+                <!-- <p>UI/UX Dsiner</p> -->
+                <h1>Hi,I'm <span>Prateek Mishra </span>  <br>From India</h1>
+            </div>
+        </div>
+    </div>
+<!-- -----------About-------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/second.jpeg.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am a junior web developer with expertise in frontend development and a strong desire to learn backend
+                    technologies. Seeking an internship opportunity, I aim to apply my frontend skills while expanding my knowledge in
+                    server-side programming, databases, and API integration. As a proactive problem solver and team player, I am
+                    committed to delivering high-quality code and actively participating in project discussions. With a passion for continuous learning, I am eager to contribute to meaningful projects, grow professionally, and make a positive
+                    impact as an intern in a web development team.
+                    </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    <li><span>Web Development</span><br>Website Development</li>
+                    <li><span>FrontEnd Development</span><br>Designing Web/App interfaces</li>
+                </ul>
+               </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>20th june-20th july 2023</span><br>Internship in InfoaidTech as Web Developer</li>
+                        <li><span>10th july - 10th August 2023</span><br>Internship in BharatIntern as a Full stack Dveloper</li>
+                        <li><span>1st july - 1st August</span><br>Internship in InternDev as a Web Developer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2024</span><br>B.tech From LIT Lucknow</li>
+                        <li><span>2019</span><br>12th from MLIC Kasganj</li>
+                        <li><span>2017</span><br>10th from MLIC Kasganj</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- -------services--------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process.</p>
+                <a href="https://www.wix.com/blog/web-design?utm_source=google&utm_medium=cpc&utm_campaign=16242175905^134377093918&experiment_id=^^582523585386^^_DSA&gclid=Cj0KCQjwtamlBhD3ARIsAARoaExMH-TcfSw4UhOkFuY7pLBjQax3zftCtKHQGVqH5kJbJhZtXYvUyEwaAgfmEALw_wcB">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>UX design focuses on the interaction that a human user has with everyday products and services. The goal of UX design is to make using these products and services, both digital or physical, easy, logical, and fun.</p>
+                <a href="https://flatironschool.com/blog/what-is-ux-ui-design/">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Front-End Development</h2>
+                <p>Front-end developer is a type of software developer who specializes in creating and designing the user interface (UI) and user experience (UX) of websites and web applications. The primary responsibility of a front-end developer is to ensure that the visual and interactive aspects of a website or application are user-friendly, aesthetically pleasing, and functionally efficient.</p>
+                <a href="https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html">Learn More</a>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- ------------Portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>
+                        PortFolio WebSite</h3>
+                        <p>Main focus for effectively presented projects, highlighting key accomplishments roles and contributions. Developing a responsive website that adapts to different sceen sizes and devices, ensuring a consistent and enjoyable browsing
+                            experience for users on desktop and mobile.</p>
+                            <a href="https://github.com/pratikmishra03"><i class="fa-solid fa-up-right-from-square"></i></a>
+                       
+                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>
+                        Food Delivery Web App</h3>
+                        <p>Created a visually appealing food delivery web page using HTML and
+                            CSS. Designed an intuitive user interface with a focus on showcasing menu items, restaurant information, and ordering options </p>
+                            <a href="https://github.com/pratikmishra03/FoodDelivery-"><i class="fa-solid fa-up-right-from-square"></i></a>
+                       
+                  
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>
+                        Contest Tracker</h3>
+                        <p>Developed a Contest Tracker web application that helps users stay updated on various contests and competitions. Built using HTML, CSS, and JavaScript and use API , the application offers a user-friendly interface with intuitive navigation.</p>
+                            <a href="https://github.com/pratikmishra03"><i class="fa-solid fa-up-right-from-square"></i></a>
+        
+                    
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/pratikmishra03" class="btn">See More</a>
+
+    </div>
+</div>
+<!-- 
+--------------contact-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=GTvVlcRwRQPFhtxDpkBpkHmFNLLGxtSDRlDJDxGbwhrxzcgcVnXRblNgdRwHgjGFmQMFvGbLBTdvV" class="Con">pratikmishra08314@gmail.com</a></p>
+                <p><i class="fa-solid fa-square-phone"></i><a href="https://web.whatsapp.com/" class="Con" type="number">7252961803</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100025181356557"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/Prateek12186334"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/_prateek.03/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/prateek-mishra-2a8206203"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Cv/Prateek's Resume (1).pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form id="form">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email"placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Mesage"></textarea>
+                    <button class="btn btn2" onclick="afterSubmit()">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Prateek with <i class="fa-solid fa-heart"></i> By Easy Development </p>
+    </div>
+</div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
